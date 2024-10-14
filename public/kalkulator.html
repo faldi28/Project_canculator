@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KALKULATOR</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body class="flex items-center justify-center h-screen bg-gray-900 ">
+    <div class="p-5 bg-white rounded-lg shadow-2xl w-80">
+        <input type="text" class="w-full h-15 bg-sky-950 text-white text-2xl text-right p-2.5 border-none rounded-md mb-5 box-border" id="display" disabled>
+        <div class="buttons grid grid-cols-4 gap-2.5">
+            <button class="p-5 text-xl text-white transition-colors duration-200 ease-in border-none rounded-md cursor-pointer btn hover:bg-sky-800 bg-sky-950" onclick="clearDisplay()">C</button>
+            <button class="p-5 text-xl text-white transition-colors duration-200 ease-in border-none rounded-md cursor-pointer btn hover:bg-sky-800 bg-sky-950" onclick="deleteLast()">DEL</button>
+            <button class="p-5 text-xl text-white transition-colors duration-200 ease-in border-none rounded-md cursor-pointer btn hover:bg-sky-800 bg-sky-950" onclick="appendToDisplay('/')">/</button>
+            <button class="p-5 text-xl text-white transition-colors duration-200 ease-in border-none rounded-md cursor-pointer btn hover:bg-sky-800 bg-sky-950" onclick="appendToDisplay('*')">*</button>
+
+            <button class="p-5 text-xl text-white transition-colors duration-200 ease-in border-none rounded-md cursor-pointer btn hover:bg-sky-800 bg-sky-950" onclick="appendToDisplay('7')">7</button>
+            <button class="p-5 text-xl text-white transition-colors duration-200 ease-in border-none rounded-md cursor-pointer btn hover:bg-sky-800 bg-sky-950" onclick="appendToDisplay('8')">8</button>
+            <button class="p-5 text-xl text-white transition-colors duration-200 ease-in border-none rounded-md cursor-pointer btn hover:bg-sky-800 bg-sky-950" onclick="appendToDisplay('9')">9</button>
+            <button class="p-5 text-xl text-white transition-colors duration-200 ease-in border-none rounded-md cursor-pointer btn hover:bg-sky-800 bg-sky-950" onclick="appendToDisplay('-')">-</button>
+
+            <button class="p-5 text-xl text-white transition-colors duration-200 ease-in border-none rounded-md cursor-pointer btn hover:bg-sky-800 bg-sky-950" onclick="appendToDisplay('4')">4</button>
+            <button class="p-5 text-xl text-white transition-colors duration-200 ease-in border-none rounded-md cursor-pointer btn hover:bg-sky-800 bg-sky-950" onclick="appendToDisplay('5')">5</button>
+            <button class="p-5 text-xl text-white transition-colors duration-200 ease-in border-none rounded-md cursor-pointer btn hover:bg-sky-800 bg-sky-950" onclick="appendToDisplay('6')">6</button>
+            <button class="p-5 text-xl text-white transition-colors duration-200 ease-in border-none rounded-md cursor-pointer btn hover:bg-sky-800 bg-sky-950" onclick="appendToDisplay('+')">+</button>
+
+            <button class="p-5 text-xl text-white transition-colors duration-200 ease-in border-none rounded-md cursor-pointer btn hover:bg-sky-800 bg-sky-950" onclick="appendToDisplay('1')">1</button>
+            <button class="p-5 text-xl text-white transition-colors duration-200 ease-in border-none rounded-md cursor-pointer btn hover:bg-sky-800 bg-sky-950" onclick="appendToDisplay('2')">2</button>
+            <button class="p-5 text-xl text-white transition-colors duration-200 ease-in border-none rounded-md cursor-pointer btn hover:bg-sky-800 bg-sky-950" onclick="appendToDisplay('3')">3</button>
+            <button class="row-span-2 text-white bg-orange-500 rounded-md btn equal hover:bg-orange-400" onclick="calculate()">=</button>
+
+            <button class="col-span-2 p-5 text-xl text-white transition-colors duration-200 ease-in border-none rounded-md cursor-pointer btn zero hover:bg-sky-800 bg-sky-950" onclick="appendToDisplay('0')">0</button>
+            <button class="p-5 text-xl text-white transition-colors duration-200 ease-in border-none rounded-md cursor-pointer btn hover:bg-sky-800 bg-sky-950" onclick="appendToDisplay('.')">.</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    
+</body>
+</html>
